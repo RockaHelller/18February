@@ -296,15 +296,28 @@
 
 
 class Car {
-    constructor(name){
-        this.name == name;
-        this.color == "Red";
+    constructor(name, speed) {
+        this.name = name;
+        //this.speed = speed;
+        this.color = "Red";
+
     }
+
+    speed(){
+        console.log(600);
+
+    }
+
 }
 
-let car1 = new Car("BMW")
+// let car1 = new Car("BMW", 500)
 
-console.log(car1.name + " " + car1.color);
+// console.log(car1.name + " " + car1.color + " " + car1.speed);
+
+
+let car2 = new Car("Toyota")
+
+car2.speed();
 
 
 
